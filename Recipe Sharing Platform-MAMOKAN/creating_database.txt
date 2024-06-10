@@ -1,0 +1,39 @@
+database name:  recipe_sharing_platform
+
+
+
+for tables:
+
+CREATE TABLE users (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(30) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE recipes (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    ingredients TEXT NOT NULL,
+    procedures TEXT NOT NULL
+);
+
+
+
+
+
+
+Inserting Items:
+
+INSERT INTO recipes (name, ingredients, procedures) 
+VALUES 
+    ('Chicken Alfredo', 'Chicken breast, fettuccine pasta, heavy cream, Parmesan cheese, garlic, butter', '1. Cook pasta according to package instructions. 2. In a pan, cook chicken until golden brown. 3. Add garlic and butter to the pan. 4. Pour in heavy cream and Parmesan cheese. 5. Stir until the sauce thickens. 6. Serve over pasta.'),
+    ('Margherita Pizza', 'Pizza dough, tomatoes, fresh mozzarella cheese, basil leaves, olive oil', '1. Roll out pizza dough. 2. Spread tomato sauce over the dough. 3. Arrange slices of fresh mozzarella cheese on top. 4. Add basil leaves. 5. Drizzle with olive oil. 6. Bake in a preheated oven until crust is golden brown.'),
+    ('Beef Tacos', 'Ground beef, taco seasoning, tortillas, lettuce, tomatoes, shredded cheese, salsa', '1. Cook ground beef in a pan until browned. 2. Add taco seasoning and water. 3. Warm tortillas. 4. Assemble tacos with beef, lettuce, tomatoes, cheese, and salsa.'),
+    ('Pasta Primavera', 'Penne pasta, assorted vegetables (e.g., bell peppers, broccoli, carrots), olive oil, garlic, Parmesan cheese', '1. Cook pasta according to package instructions. 2. In a pan, sauté garlic in olive oil. 3. Add chopped vegetables and cook until tender. 4. Toss cooked pasta with the vegetables. 5. Serve with grated Parmesan cheese.'),
+    ('Caesar Salad', 'Romaine lettuce, Caesar dressing, Parmesan cheese, croutons', '1. Wash and chop romaine lettuce. 2. Toss lettuce with Caesar dressing. 3. Top with grated Parmesan cheese and croutons. 4. Serve chilled.'),
+    ('Grilled Salmon', 'Salmon fillets, lemon, olive oil, garlic, salt, pepper', '1. Preheat grill to medium-high heat. 2. Drizzle olive oil over salmon fillets. 3. Season with minced garlic, salt, and pepper. 4. Grill salmon for about 6-8 minutes on each side until cooked through. 5. Squeeze fresh lemon juice over the top before serving.'),
+    ('Vegetable Stir-Fry', 'Assorted vegetables (e.g., bell peppers, broccoli, carrots, snap peas), tofu or chicken, soy sauce, garlic, ginger, sesame oil', '1. Heat sesame oil in a pan. 2. Add minced garlic and ginger. 3. Stir in chopped vegetables and tofu or chicken. 4. Cook until vegetables are tender. 5. Add soy sauce for flavor. 6. Serve over rice or noodles.'),
+    ('Caprese Salad', 'Tomatoes, fresh mozzarella cheese, fresh basil leaves, balsamic glaze, olive oil, salt, pepper', '1. Slice tomatoes and mozzarella cheese. 2. Arrange alternating slices of tomato and cheese on a plate. 3. Tuck fresh basil leaves between the slices. 4. Drizzle with balsamic glaze and olive oil. 5. Season with salt and pepper. 6. Serve as a refreshing salad.'),
+    ('Beef Stir-Fry', 'Beef strips, bell peppers, onions, soy sauce, garlic, ginger, sesame oil', '1. Marinate beef strips in soy sauce, minced garlic, and ginger. 2. Heat sesame oil in a pan. 3. Stir-fry beef until browned. 4. Add sliced bell peppers and onions. 5. Cook until vegetables are tender. 6. Serve hot over rice or noodles.'),
+    ('Chocolate Chip Cookies', 'Butter, brown sugar, white sugar, eggs, vanilla extract, all-purpose flour, baking soda, salt, chocolate chips', '1. Preheat oven to 350°F (175°C). 2. Cream together butter, brown sugar, and white sugar. 3. Beat in eggs and vanilla extract. 4. Combine flour, baking soda, and salt; gradually mix into the creamed mixture. 5. Stir in chocolate chips. 6. Drop dough by rounded spoonfuls onto ungreased cookie sheets. 7. Bake for 10 to 12 minutes until edges are golden brown. 8. Allow cookies to cool on baking sheet for 5 minutes before transferring to wire racks to cool completely.');
